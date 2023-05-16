@@ -30,11 +30,12 @@ export default function App() {
       {/* </ErrorBoundary> */}
 
       </Routes>
+      <Footer/>
       </> 
       :
       <AuthPage path='/'setUser={setUser} user={user}/>
       }
-      <Footer/>
+      
     </main>
   );
 }

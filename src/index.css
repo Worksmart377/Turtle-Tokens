@@ -12,9 +12,7 @@
   color: var(--primary);
 }
 
-.nav-background {
-  background-color: var(--background);
-}
+
 
 ul {
   list-style-type: none;
@@ -36,7 +34,7 @@ link {
 
 
 body {
-  font-family: 'Bangers', cursive, 'Fjalla One', sans-serif, 'Rajdhani', sans-serif ;
+  font-family: 'Fjalla One', sans-serif, 'Rajdhani', sans-serif ;
 }
 
 h1 {

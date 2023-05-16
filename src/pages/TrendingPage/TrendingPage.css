@@ -1,4 +1,52 @@
 .trend-container {
     display: grid;
-    
+    grid-template-rows: repeat(2, 15vmin);
+    grid-template-columns: repeat(5, 15vmin);
+    gap: 1.5vmin;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    padding: 3px 3px;
+
+}
+
+.display-box {
+    display: grid;
+    position: relative;
+    justify-content: space-between;
+    align-items: top;
+    padding: 5px 5px;
+    border: solid 2px #949699;
+    border-radius: 25px;
+    max-width: 50vmin;
+    max-height: 90vmin;
+    gap: 1vmin;
+    box-shadow: 3px 4px #4a5566;
+
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 15vmin) ;
+    gap: 2vmin;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 5px 5px;
+
+}
+
+.rocket {
+    display: flex;
+    justify-content: end;
+    height: 30vmin;
+    width: 30vmin;
+    margin: 10px 10px;
 }

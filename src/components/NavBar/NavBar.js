@@ -11,15 +11,15 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav>
-        {user && <span>&nbsp;Welcome, {user.name}</span>}
+    <nav className="nav-background">
+        {user && <span>&nbsp;Welcome, {user.name}!</span>}
         &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
+      <Link className="nav-links" to="" onClick={handleLogOut}>Log Out</Link>
         &nbsp; | &nbsp;
 
-      <Link to="/home">Home</Link>
-      <Link to="/search">Search</Link>
-      <Link to="/trending">Trending</Link>
+      <Link className="nav-links" to="/home">Home</Link>
+      <Link className="nav-links" to="/search">Search</Link>
+      <Link className="nav-links" to="/trending">Trending</Link>
 
     </nav>
   );
