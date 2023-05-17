@@ -1,7 +1,7 @@
 import './App.css';
 import {useState} from 'react'
 import AuthPage from '../Authpage/AuthPage';
-import SearchPage from '../SearchPage/SearchPage';
+import LearningCenter from '../LearningCenter/LearningCenter';
 import TrendingPage from '../TrendingPage/TrendingPage';
 import Home from '../Home/Home';
 import NavBar from '../../components/NavBar/NavBar';
@@ -9,6 +9,7 @@ import Footer from '../../components/Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 // import ErrorBoundary from '../../utilities/ErrorBoundary';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
       <Route path= '/home' element={<Home/>} />
       {/* <ErrorBoundary fallback={<p>Something went wrong</p>}> */}
 
-      <Route path= '/search' element={<SearchPage/>} />
+      <Route path= '/learn' element={<LearningCenter/>} />
       <Route path= '/trending' element={<TrendingPage/>} />
 
       {/* </ErrorBoundary> */}
