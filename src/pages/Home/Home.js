@@ -32,13 +32,11 @@ export default function Home() {
       <>
         <div className='container'>
           <div className='title'>
-            <h1>Turtle Tokens Shell</h1>
+            <h1>Turtle Tokens Shell</h1><span ><img className='logo' src={Logo} alt="turtle logo" /></span>
             <h3 className='primary'>"Swim With The Current"</h3>
             <p>Thank you for visiting us! This site was designed as a resource for you to learn more about cryptocurrency. We hope you enjoy searching, reading, and watching all we have to offer.</p>
             </div>
-            <div className='logo'>
-              <img src={Logo} alt="turtle logo" />
-          </div>
+            
           {featured.map((coin) => (
                     <div className='display-box'>
                     <div>
