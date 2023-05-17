@@ -42,9 +42,13 @@ export default function TrendingPage(props) {
                             <li>Market Cap Rank: {coin.item.market_cap_rank}</li>
                             <li className='coins'><img src={coin.item.large} alt="" /></li>
                         </ul>                       
-                    </div>       
+                    </div>   
+                        
              ))}
              </div>
+             <div className='check-token'>
+                <button onClick={handleCheckToken}>Check When My Login Expires</button>
+            </div>
             </>
             )
     }else {

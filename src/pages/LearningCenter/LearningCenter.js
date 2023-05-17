@@ -1,23 +1,23 @@
-
+import './LearningCenter.css'
 import { Container } from 'react-bootstrap';
 
 export default function LearningCenter(props) {
   return(
     <div>
-
-  
-    <div>
+    <div className='title'>
       <h1>Learning Center</h1>
-      <h5>Check out the video playlist below to learn more about Crypto. These videos are meant for beginners and are very comprehensive. I have also compiled a list of keywords below that you can use to search youtube or tiktok.</h5>
+      <h5>Check out the video playlist below to learn more about Crypto. These videos are meant for beginners and are very comprehensive. I have also compiled a list of keywords below that you can use to search youtube, tiktok, or your favorite search engine.</h5>
     </div>
     <Container>
-    <div>
+    <div className='table'>
     <table>
         <tr>
         <th>Popular Coins</th>
         <th>Key Terms</th>
+        <th>Websites</th>
         <th>FAQ</th>
         </tr>
+        <tbody>
         <tr>
           <td>Bitcoin</td>
           <td>Etherium</td>
@@ -33,12 +33,20 @@ export default function LearningCenter(props) {
           <td>Altcoins</td>
         </tr>
         <tr>
+          <td><a href="https://coinmarketcap.com/">Coin Market Cap</a></td>
+          <td><a href="https://cryptobubbles.net/">Crypto Bubbles</a></td>
+          <td><a href="https://finance.yahoo.com/crypto/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAK08zy5ydXu4MPIfvkyUdwUbn9gwvSWjiO-RM0cYRWxPp-ZK7TCvGw2Dqw5x_ng2oVmCv9bVE-zlSzAqt2eHX6jTQ2bfDzX3jmJUSQgjLGakdH39kBiLSsiEzEGAbA6dqyG7hXRQiIcUUTk48KF3dSlwN6R5wHFEKwIebxNplRRv">Yahoo Finance Crypto</a></td>
+          <td><a href="https://crypto.news/">Crypto News</a></td>
+          <td><a href="https://thecryptobasic.com/">Crypto Basic</a></td>
+        </tr>
+        <tr>
           <td>What kind of crypto wallets are there?</td>
           <td>Where to buy cryptocurrency?</td>
           <td>What is distributed ledger technology?</td>
           <td>What are the use cases for cryptocurrency?</td>
           <td>How many recent commits does a crypto project have? </td>
         </tr>
+        </tbody>
       </table>
     </div>
   </Container>
