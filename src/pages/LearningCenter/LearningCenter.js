@@ -6,7 +6,9 @@ export default function LearningCenter(props) {
     <div>
     <Container>
       <div className='title'>
-        <h1>Learning Center</h1>
+        <div className='neon-div'>
+        <h1 className='neon-sign'>Learning Center</h1>
+        </div>
         <h5>
           Check out the video playlist below to learn more about Crypto. These
           videos are meant for beginners and are very comprehensive. I have also

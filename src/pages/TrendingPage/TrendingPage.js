@@ -31,10 +31,11 @@ export default function TrendingPage(props) {
         return (
             <>
             <Container>
-            <div className='top'>
-            <h1>Currently Trending Crypto</h1>
-            <img className='rocket' src={Rocket} alt="shiba-inu wearing rocketpack" />
+            <div className='neon-div'>
+            <h1 className='neon-sign'>Currently Trending Crypto</h1>
             </div>
+            <img className='rocket' src={Rocket} alt="shiba-inu wearing rocketpack" />
+            
             </Container>
             <div className="trend-container">
             {trending.map((coin) => (

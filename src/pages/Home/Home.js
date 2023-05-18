@@ -31,21 +31,28 @@ export default function Home() {
       <>
         <div className='container'>
           <div className='title'>
-            <div className='title-logo'><h1>Turtle Tokens Shell</h1>
+            <div className='neon-div'>
+              <h1 className='neon-sign'>Turtle Tokens Shell</h1>
+            </div> 
+            <div className='logo-animation-div'>
               <img className='logo' src={Logo} alt='turtle logo' /> 
-            </div>
-            <h3 className='primary'>"Swim With The Current"</h3>
-            <p>
+            </div> 
+            </div>         
+            
+
+          <div className='graph'>
+          <h3 className='primary'>"Swim With The Current"</h3>
+          <div className='paragraph-div'>
+          <span className='paragraph'>
               Thank you for visiting us! This site was designed as a resource
               for you to learn more about cryptocurrency. We hope you enjoy
               searching, reading, and watching all we have to offer.
-            </p>
-          </div>
-          <Container>
-          <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="600px" frameborder="0"></iframe>
-          </Container>
+            </span>
+            </div>
+          <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="550px" height="300px" frameborder="0"></iframe>
+          </div>            <h3>Featured Coins</h3>
+
           <div className='coin-container'>
-            <h3>Featured Coins</h3>
             {featured.map((coin) => (
               <div className='display-coin silver'>
                 {/* <div> */}
