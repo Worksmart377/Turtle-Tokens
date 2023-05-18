@@ -3,7 +3,6 @@ import Logo from '../../imgs/LogoT.png';
 import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 import './Home.css';
 import { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
 
 
 export default function Home() {
@@ -49,9 +48,11 @@ export default function Home() {
               searching, reading, and watching all we have to offer.
             </span>
             </div>
-          <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="550px" height="300px" frameborder="0"></iframe>
-          </div>            <h3>Featured Coins</h3>
-
+          <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="300px" frameborder="0"></iframe>
+          </div>
+          <div className='featured'>            
+            <h3>Featured Coins</h3>
+          </div>
           <div className='coin-container'>
             {featured.map((coin) => (
               <div className='display-coin silver'>

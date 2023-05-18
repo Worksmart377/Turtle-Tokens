@@ -2,9 +2,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1vmin);
   column-gap: 25vmin;
-  /* grid-template-rows: 6; */
 }
 
+.featured {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
 .title-logo{
     display: grid;
@@ -13,8 +17,10 @@
 .title {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px ;
+    height: fit-content;
 
 }
 
@@ -109,7 +115,9 @@
       width: fit-content;
     }
    .paragraph-div {
+    margin-left: 20px;
     display: flexbox;
+    text-align: center;
     justify-content: center;
     max-width: 550px;
     padding-bottom: 20px;

@@ -8,7 +8,6 @@ import NavBar from '../../components/NavBar/NavBar';
 import Footer from '../../components/Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
-// import ErrorBoundary from '../../utilities/ErrorBoundary';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,13 +21,10 @@ export default function App() {
       <Routes>
 
       { /*Route Components here */}
-      <Route path= '/home' element={<Home/>} />
-      {/* <ErrorBoundary fallback={<p>Something went wrong</p>}> */}
+      <Route path= '/home' element={<Home /> } key={Home}/>
+      <Route path= '/learn' element={<LearningCenter/>} key={LearningCenter} />
+      <Route path= '/trending' element={<TrendingPage/>} key={TrendingPage}/>
 
-      <Route path= '/learn' element={<LearningCenter/>} />
-      <Route path= '/trending' element={<TrendingPage/>} />
-
-      {/* </ErrorBoundary> */}
 
       </Routes>
       <Footer/>
