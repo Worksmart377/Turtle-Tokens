@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { checkToken } from '../../utilities/users-service'
-import ErrorGif from '../../imgs/Error.gif';
 import Rocket from '../../imgs/rocket.png';
 import './TrendingPage.css';
+import { Container } from 'react-bootstrap';
+
 
 
 export default function TrendingPage(props) {
@@ -29,10 +30,12 @@ export default function TrendingPage(props) {
     if(trending){
         return (
             <>
+            <Container>
             <div className='top'>
             <h1>Currently Trending Crypto</h1>
             <img className='rocket' src={Rocket} alt="shiba-inu wearing rocketpack" />
             </div>
+            </Container>
             <div className="trend-container">
             {trending.map((coin) => (
                     <div className='display-box'>
@@ -55,7 +58,6 @@ export default function TrendingPage(props) {
         return (
     <div className='error-container'>
     <h1>Loading ...</h1>
-    <img src={ErrorGif} alt="swimming turtle" />
     </div>
     ) }
     

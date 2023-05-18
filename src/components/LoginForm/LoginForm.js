@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
+import ErrorGif from '../../imgs/Error.gif';
+
 
 export default function LoginForm({ setUser }) {
   const [credentials, setCredentials] = useState({
@@ -23,7 +25,8 @@ export default function LoginForm({ setUser }) {
       const user = await usersService.login(credentials);
       setUser(user);
     } catch {
-      setError('Log In Failed - Try Again');
+      setError((<img src={ErrorGif} alt="swimming turtle" />,
+      'Log In Failed - Try Again'));
     }
   }
 

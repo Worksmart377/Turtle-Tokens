@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import { signUp} from '../../utilities/users-service'
+import ErrorGif from '../../imgs/Error.gif';
+
 
 export default class SignUpForm extends Component {
     state = {
@@ -26,7 +28,8 @@ export default class SignUpForm extends Component {
                 const user = await signUp(formData);
                 this.props.setUser(user);
             } catch {
-                this.setState({error: 'Sign Up Failed - Try Again'});
+                this.setState({error:  (<img src={ErrorGif} alt="swimming turtle" />,
+                'Sign Up Failed - Try Again')});
             }
         };
 

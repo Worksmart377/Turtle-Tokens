@@ -1,18 +1,56 @@
-.container {
-    display: flexbox;
-    flex-direction: column;
-}
-
-.title {
+.display-coin{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 8px 8px;
+    width: 170px;
+    height: 180px;
+    background-color: #acaeb0;
+    box-shadow: 3px 4px #4a5566;
+    border: solid 2px var(--accent2);
+    border-radius: 25px;
+}
+
+.title-logo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.title {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    margin-top: 20px ;
 
 }
 
 .logo {
     width: 150px;
     height: 150px;
+
+}
+
+
+.logo:hover {
+    animation-name: spinlogo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spinlogo {
+    from { transform: rotateY(0deg) }
+  to { transform: rotateY(360deg) }
+}
+
+.coin-image{
+    width: 8vmin;
+    height: 8vmin;
+    
+
+
 }
 
 .red {
@@ -21,3 +59,44 @@
 .green {
     color: green;
 }
+
+@keyframes shine { 
+    0% {
+        transform:translateX(-100%) translateY(-100%) rotate(30deg);
+    }
+    80% {transform:translateX(-100%) translateY(-100%) rotate(30deg);}
+      100% {transform:translateX(100%) translateY(100%) rotate(30deg);}
+  }
+  
+  
+  .display-coin {
+  
+    position:relative;
+    z-index:0;
+    overflow:hidden;
+    
+    
+    &:after {
+      content:'';
+      top:0;
+      transform:translateX(100%) rotate(30deg);
+      width:300%;
+      height:300%;
+      position: absolute;
+      z-index:1;
+      animation: shine 3s infinite ease-in;
+      background:
+        linear-gradient( to right, 
+          rgba(255,255,255,0) 0%,
+          rgba(255,255,255,0.8) 50%,
+          rgba(128,186,232,0) 99%,
+          rgba(128,186,232,0) 100%);
+    }
+    &.silver {
+      background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+    }
+   
+    }
+    
+    
+  
