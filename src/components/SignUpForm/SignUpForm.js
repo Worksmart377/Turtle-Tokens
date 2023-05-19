@@ -23,6 +23,7 @@ export default class SignUpForm extends Component {
                 const formData = {...this.state};
                 delete formData.confirm;
                 delete formData.error;
+                console.log(formData)
 
                 const user = await signUp(formData);
                 this.props.setUser(user);
