@@ -31,7 +31,7 @@ My Trello Board:
 <https://trello.com/b/Tl2boi8S/turtle-tokens-crypto-site>
 
 My App:
-<https://turtle-tokens.netlify.app/>
+<https://turtle-tokesn.herokuapp.com/>
 ## Instructions :
 
 You can fork and clone this repository if you are interested in creating your own version of this app. The logo's are proprietary so please use another logo for your application. This application is soley for educational purposes and is not meant to give financial advice. 
