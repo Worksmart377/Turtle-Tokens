@@ -1,4 +1,4 @@
-# App Title: 🐢 Turtle Tokens Shell 🐢 (MERN Stack Single-Page Application)
+# App Title: 🐢 Turtle Tokens 🐢 (MERN Stack Single-Page Application)
 ## Intro & Description :
  This application is meant for the user who is brand new to cryptocurrency. It is a resource for the user to learn the basics of crypto and get information on the most popular coins. In this time where everything is moving into a digital age, I believe that knowledge and action on these topics can help users to transition into the new financial system seemlessly. None of the information given is meant to give financial advice in anyway. 
  
