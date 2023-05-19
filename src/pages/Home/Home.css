@@ -1,11 +1,13 @@
 .coin-container {
   display: grid;
-  grid-template-columns: repeat(3, 1vmin);
-  column-gap: 25vmin;
+  grid-template-columns: repeat(3, 15vmin);
+  grid-template-rows: repeat(2, 15vmin);
+  gap: 8vmin;
 }
 
 .featured {
-  margin-top: 20px;
+  margin-left: 60px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -14,19 +16,37 @@
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
+.container {
+  display: flex;
+}
+
+
 .title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px ;
+    margin-top: 50px ;
     height: fit-content;
 
 }
 
+.tokens-container {
+  padding-left: 10vmin;
+  display: flexbox;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  max-width: max-content;
+
+ }
+
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
 
 }
 
@@ -47,6 +67,8 @@
 .coin-image{
     width: 8vmin;
     height: 8vmin;
+    border-radius: 50px;
+
     
 
 
@@ -108,14 +130,14 @@
    
     }
 
-    .graph {
+    .top-container {
       display: flex;
       flex-direction: column;
       height: fit-content;
       width: fit-content;
     }
    .paragraph-div {
-    margin-left: 20px;
+    margin-left: 70px;
     display: flexbox;
     text-align: center;
     justify-content: center;
@@ -124,5 +146,10 @@
     padding-top: 20px;
 
    } 
+
+   
+
+  
+   
     
   

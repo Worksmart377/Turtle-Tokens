@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { checkToken } from '../../utilities/users-service'
 import Rocket from '../../imgs/rocket.png';
 import './TrendingPage.css';
-import { Container } from 'react-bootstrap';
+
 
 
 
@@ -30,28 +30,36 @@ export default function TrendingPage(props) {
     if(trending){
         return (
             <>
-            <Container>
+            <div className='container'>
+            <div className='top-sign'>
             <div className='neon-div'>
             <h1 className='neon-sign'>Currently Trending Crypto</h1>
             </div>
-            <img className='rocket' src={Rocket} alt="shiba-inu wearing rocketpack" />
+            <div>
+                <p>The coins displayed are pulled from the most searched list on CoinGecko API. This will update every 24 hours. This list is just a starting point for you to be able to do some research on the what's trending right now. </p>
+            </div>
             
-            </Container>
+            </div>
+            <div className='animated-img'>
+                <img className='rocket' src={Rocket} alt="shiba-inu wearing rocketpack" />
+                </div>
             <div className="trend-container">
+                
             {trending.map((coin) => (
-                    <div className='display-box'>
+                    <div className='display-box silver'>
                         <ul>
                             <li>Name: {coin.item.name}</li>
                             <li>Tick Symbol: "{coin.item.symbol}"</li>
                             <li>Market Cap Rank: {coin.item.market_cap_rank}</li>
-                            <li className='coins'><img src={coin.item.large} alt="" /></li>
+                            <li ><img className='coins' src={coin.item.large} alt="" /></li>
                         </ul>                       
                     </div>   
                         
              ))}
              </div>
+             </div>
              <div className='check-token'>
-                <button onClick={handleCheckToken}>Check When My Login Expires</button>
+                <button className='btn' onClick={handleCheckToken}>Check When My Login Expires</button>
             </div>
             </>
             )

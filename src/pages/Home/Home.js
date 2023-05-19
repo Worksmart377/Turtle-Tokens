@@ -31,15 +31,10 @@ export default function Home() {
         <div className='container'>
           <div className='title'>
             <div className='neon-div'>
-              <h1 className='neon-sign'>Turtle Tokens Shell</h1>
-            </div> 
-            <div className='logo-animation-div'>
-              <img className='logo' src={Logo} alt='turtle logo' /> 
-            </div> 
-            </div>         
-            
+              <h1 className='neon-sign'>Turtle Tokens </h1>
 
-          <div className='graph'>
+            </div> 
+             <div className='top-container'>
           <h3 className='primary'>"Swim With The Current"</h3>
           <div className='paragraph-div'>
           <span className='paragraph'>
@@ -48,17 +43,25 @@ export default function Home() {
               searching, reading, and watching all we have to offer.
             </span>
             </div>
-          <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="300px" frameborder="0"></iframe>
-          </div>
+            <div className='graph'>
+            <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="300px" frameborder="0"></iframe>
+            </div>
+          </div >
+            </div>         
+            
+          <div className='tokens-container'>
+          <div className='logo-animation-div'>
+              <img className='logo' src={Logo} alt='turtle logo' /> 
+            </div>
           <div className='featured'>            
             <h3>Featured Coins</h3>
           </div>
           <div className='coin-container'>
             {featured.map((coin) => (
               <div className='display-coin silver'>
-                {/* <div> */}
+                <div>
                   <img className='coin-image' src={coin.image} alt='' />
-                {/* </div> */}
+                </div>
                 <div>
                   <h5>{coin.name}</h5>
                   <p>${coin.current_price.toLocaleString()}</p>
@@ -75,11 +78,14 @@ export default function Home() {
                   </span>
                 )}
               </div>
+              
             ))}
+            </div>
+            
           </div>
         </div>
         <div className='check-token'>
-          <button onClick={handleCheckToken}>
+          <button  className="btn" onClick={handleCheckToken}>
             Check When My Login Expires
           </button>
         </div>
@@ -92,4 +98,30 @@ export default function Home() {
       </div>
     );
   }
+
+  // const loading = window.onload => () {
+
+  //   let my_iframe = document.querySelector(“#my-iframe-id”).contentWindow;
+    
+  //   let form = document.querySelector(“#msg_form”);
+    
+  //   let your_msg = document.querySelector(“#your_msg”);
+    
+  //   your_msg.select();
+    
+  //   form.onsubmit = function () {
+    
+  //   // The second value of postMessage should the
+    
+  //   // name of your website. Here, we pass “*” so that
+    
+  //   // it can work on your computer.
+    
+  //   my_iframe.postMessage(your_msg.value, “*”);
+    
+  //   return false;
+    
+  //   };
+    
+  //   };
 }

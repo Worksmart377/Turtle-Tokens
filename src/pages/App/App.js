@@ -21,7 +21,7 @@ export default function App() {
       <Routes>
 
       { /*Route Components here */}
-      <Route path= '/home' element={<Home /> } key={Home}/>
+      <Route path= '/' element={<Home /> } key={Home}/>
       <Route path= '/learn' element={<LearningCenter/>} key={LearningCenter} />
       <Route path= '/trending' element={<TrendingPage/>} key={TrendingPage}/>
 
@@ -30,7 +30,7 @@ export default function App() {
       <Footer/>
       </> 
       :
-      <AuthPage path='/'setUser={setUser} user={user}/>
+      <AuthPage className='bg' path='/'setUser={setUser} user={user}/>
       }
       
     </main>

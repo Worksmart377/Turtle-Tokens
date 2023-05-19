@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# App Title: 🐢 Turtle Tokens Shell 🐢 (MERN Stack Single-Page Application)
+## Intro & Description :
+ This application is meant for the user who is brand new to cryptocurrency. It is a resource for the user to learn the basics of crypto and get information on the most popular coins. In this time where everything is moving into a digital age, I believe that knowledge and action on these topics can help users to transition into the new financial system seemlessly. None of the information given is meant to give financial advice in anyway. 
+ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Landing Page & WireFrame:
 
-## Available Scripts
+MERN App
+![Home](/src/imgs/Home.png)
 
-In the project directory, you can run:
 
-### `npm start`
+WireFrames
+![WireFrame Home](/src/imgs/WF-Home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![WireFrame Trending](/src/imgs/WF-Trending.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![WireFrame Learning](/src/imgs/WF-Learning.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React, Express JS, Node.JS, Mongoose, MongoDB, JavaScript, CSS, JSX, Heroku
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started 🪙 :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+My Trello Board:
+<https://trello.com/b/Tl2boi8S/turtle-tokens-crypto-site>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+My App:
+<>
+## Instructions :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can fork and clone this repository if you are interested in creating your own version of this app. The logo's are proprietary so please use another logo for your application. This application is soley for educational purposes and is not meant to give financial advice. 
 
-## Learn More
+### Contribution Guidelines: 
+ 
+ If you would like to contribute to the project you can push your code and create a pull request. Some areas of improvement to focus on would be the sign in feature, the graph iframe, and the youtube iframe. In the future I am looking to add a page for blog posts and a page for NFT's. I also would like to use a different crypto API and the youtube API as well. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
