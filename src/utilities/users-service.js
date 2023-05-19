@@ -1,5 +1,17 @@
 import * as userAPI from "./users-api";
 
+
+export async function login(credentials) {
+    const token = await userAPI.login(credentials);
+    localStorage.setItem('token', token);
+    return getUser();
+}
+
+export function logOut() {
+    localStorage.removeItem('token');
+};
+
+
 export async function signUp(userData) {
   const token = await userAPI.signUp(userData);
   localStorage.setItem("token", token);
@@ -28,15 +40,6 @@ export function getUser() {
   return token ? JSON.parse(atob(token.split(".")[1])).user : null;
 }
 
-export async function login(userData) {
-  const token = await userAPI.login(userData);
-  localStorage.setItem("token", token);
-  return getUser();
-}
-
-export function logOut() {
-  localStorage.removeItem("token");
-}
 
 export function checkToken() {
   // Just so that you don't forget how to use.then
