@@ -34,7 +34,7 @@ export default function Home() {
               <h1 className='neon-sign'>Turtle Tokens </h1>
 
             </div> 
-             <div className='top-container'>
+            <div className='top-container'>
           <h3 className='primary'>"Swim With The Current"</h3>
           <div className='paragraph-div'>
           <span className='paragraph'>
@@ -97,31 +97,4 @@ export default function Home() {
         <h1>Loading ...</h1>
       </div>
     );
-  }
-
-  // const loading = window.onload => () {
-
-  //   let my_iframe = document.querySelector(“#my-iframe-id”).contentWindow;
-    
-  //   let form = document.querySelector(“#msg_form”);
-    
-  //   let your_msg = document.querySelector(“#your_msg”);
-    
-  //   your_msg.select();
-    
-  //   form.onsubmit = function () {
-    
-  //   // The second value of postMessage should the
-    
-  //   // name of your website. Here, we pass “*” so that
-    
-  //   // it can work on your computer.
-    
-  //   my_iframe.postMessage(your_msg.value, “*”);
-    
-  //   return false;
-    
-  //   };
-    
-  //   };
-}
+}}
