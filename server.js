@@ -23,7 +23,7 @@ app.use(require('./config/checkToken'));
 
 // mount routes
 // API routes go here
-app.use('/api/users', require('./routes/api/users.js'));
+app.use('/api/users', require('./routes/api/users'));
 // "catch all route" - used to always serve index.html
 app.get('/*',(req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
