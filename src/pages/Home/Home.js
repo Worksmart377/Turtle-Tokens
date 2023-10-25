@@ -1,4 +1,3 @@
-import { checkToken } from '../../utilities/users-service';
 import Logo from '../../imgs/LogoT.png';
 import { BsGraphDownArrow, BsGraphUpArrow } from 'react-icons/bs';
 import './Home.css';
@@ -6,9 +5,7 @@ import { useState, useEffect } from 'react';
 
 
 export default function Home() {
-  async function handleCheckToken() {
-    const expDate = await checkToken();
-  }
+  
   const url =
     'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false&locale=en';
   const [featured, setFeatured] = useState(null);
@@ -84,11 +81,7 @@ export default function Home() {
             
           </div>
         </div>
-        <div className='check-token'>
-          <button  className="btn" onClick={handleCheckToken}>
-            Check When My Login Expires
-          </button>
-        </div>
+        
       </>
     );
   } else {
