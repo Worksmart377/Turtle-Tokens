@@ -41,7 +41,7 @@ export default function Home() {
             </span>
             </div>
             <div className='graph'>
-            <iframe src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="300px" frameborder="0"></iframe>
+            <iframe title="BitCoin Graph" src="https://www.coindesk.com/embedded-chart/mLWKtcw6LPmpK" width="600px" height="300px" frameborder="0"></iframe>
             </div>
           </div >
             </div>         
