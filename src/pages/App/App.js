@@ -1,23 +1,21 @@
 import './App.css';
-import {useState} from 'react'
-import AuthPage from '../Authpage/AuthPage';
+import WelcomePage from '../Welcome/WelcomePage';
 import LearningCenter from '../LearningCenter/LearningCenter';
 import TrendingPage from '../TrendingPage/TrendingPage';
 import Home from '../Home/Home';
 import NavBar from '../../components/NavBar/NavBar';
 import Footer from '../../components/Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
-import { getUser } from '../../utilities/users-service';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App() {
-  const [user, setUser] = useState(getUser());
   return (
     <main className="App">
-      {user ? 
+      <WelcomePage className='bg' path='/'/>
+
       <>
-      <NavBar user={user} setUser={setUser}/>
+      <NavBar />
       <Routes>
 
       { /*Route Components here */}
@@ -29,9 +27,6 @@ export default function App() {
       </Routes>
       <Footer/>
       </> 
-      :
-      <AuthPage className='bg' path='/'setUser={setUser} user={user}/>
-      }
       
     </main>
   );
