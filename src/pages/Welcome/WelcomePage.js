@@ -13,7 +13,7 @@ export default function WelcomePage() {
             <div className="left">
               <div className="toggle">
               <h3>Welcome to Turtle Tokens!</h3>
-              <Link className="nav-links" to="/"><button className="btn enter">
+              <Link className="nav-links" to="/home"><button className="btn enter">
                   Come take a swim!
                 </button></Link>
 

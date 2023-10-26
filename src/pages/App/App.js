@@ -19,7 +19,7 @@ export default function App() {
       <Routes>
 
       { /*Route Components here */}
-      <Route path= '/' element={<Home /> } key={Home}/>
+      <Route path= '/home' element={<Home /> } key={Home}/>
       <Route path= '/learn' element={<LearningCenter/>} key={LearningCenter} />
       <Route path= '/trending' element={<TrendingPage/>} key={TrendingPage}/>
 
