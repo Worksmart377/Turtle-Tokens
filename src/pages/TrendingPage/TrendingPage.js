@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { checkToken } from '../../utilities/users-service'
 import Rocket from '../../imgs/rocket.png';
 import './TrendingPage.css';
 

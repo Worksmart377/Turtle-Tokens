@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./WelcomePage.css";
+import { Link } from "react-router-dom";
+
 
 export default function WelcomePage() {
   return (
@@ -11,9 +13,11 @@ export default function WelcomePage() {
             <div className="left">
               <div className="toggle">
               <h3>Welcome to Turtle Tokens!</h3>
-                <button className="btn enter">
+              <Link className="nav-links" to="/"><button className="btn enter">
                   Come take a swim!
-                </button>
+                </button></Link>
+
+                
               </div>
             </div>
           </>
