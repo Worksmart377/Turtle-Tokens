@@ -21,10 +21,6 @@ export default function TrendingPage(props) {
     useEffect(() => {
         fetchCoins();
     }, []);
-
-  async function handleCheckToken() {
-    const expDate = await checkToken();
-  }
   
     if(trending){
         return (
@@ -57,9 +53,7 @@ export default function TrendingPage(props) {
              ))}
              </div>
              </div>
-             <div className='check-token'>
-                <button className='btn' onClick={handleCheckToken}>Check When My Login Expires</button>
-            </div>
+            
             </>
             )
     }else {
